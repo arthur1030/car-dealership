@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+}
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    z-index: -1;
+}
+.go-back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1;
+}
+h1 {
+    margin-top: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow-y: auto;
+}
+table {
+    width: 60%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(44, 62, 80, 0);
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 70vh;
+    overflow-y: auto;
+    display: block;
+}
+th, td {
+    padding: 15px;
+    border: 1px solid #555;
+    text-align: left;
+    background: rgba(52, 73, 94, 0.089);
+    transition: transform 0.4s ease-in-out;
+}
+th {
+    background: #2c3e50;
+    color: white;
+}
+tr {
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+tr:hover td {
+    background: #1f2c38;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+tr:not(:first-child) td {
+    border-top: 10px solid transparent;
+}
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(44, 62, 80, 0.4);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #151e47;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #04146b;
+}
